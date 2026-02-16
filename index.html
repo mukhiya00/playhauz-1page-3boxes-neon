@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>PLAYHAUZ</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Background (uses your 1PAGE design) -->
+  <div class="bg" aria-hidden="true">
+    <div class="bg-image"></div>
+    <div class="bg-glitch"></div>
+    <div class="bg-vignette"></div>
+  </div>
+
+  <!-- Navbar -->
+  <header class="nav">
+    <div class="nav-inner">
+      <a class="brand" href="#home" aria-label="Playhauz Home">
+        <img class="brand-logo" src="assets/logo.webp" alt="PLAYHAUZ logo" />
+        <span class="brand-text glitch" data-text="PLAYHAUZ">PLAYHAUZ</span>
+      </a>
+
+      <nav class="menu" id="menu">
+        <a href="#home">Home</a>
+        <a href="#packages">Our Services</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="icon-btn" id="menuBtn" aria-label="Open Menu">☰</button>
+        <a class="btn primary" href="#packages">Book Now</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO (booking overlay same style) -->
+  <main class="wrap" id="home">
+    <section class="hero">
+      <div class="hero-text">
+        <h1>India's Best Memories Experience<br/>Theatre Venue for Celebrations</h1>
+        <p class="sub">Book Your Perfect Celebration: Birthdays, Anniversaries, Date Nights &amp; More!</p>
+        <div class="neon-line" aria-hidden="true"></div>
+      </div>
+
+      <div class="hero-book">
+        <div class="glass-card rgb-border">
+          <div class="card-head">
+            <span class="pill">Delhi NCR</span>
+          </div>
+
+          <div class="field">
+            <label>CITY</label>
+            <select id="city">
+              <option>Delhi NCR</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label>LOCATION</label>
+            <select id="location">
+              <option value="">Choose a location</option>
+              <option>Lajpat Nagar - 1 (B-31 Basement)</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label>DATE</label>
+            <input id="date" type="date" />
+          </div>
+
+          <button class="btn primary full" id="bookNowTop">Book Now</button>
+
+          <div class="stats">
+            <div class="stat">
+              <div class="stat-num">153,754</div>
+              <div class="stat-text">bookings completed</div>
+            </div>
+            <div class="live">
+              <span class="dot"></span>
+              <span id="liveText">132 People searching right now!</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PACKAGES (ONLY 3 BOXES, each box scrolls 3 images) -->
+    <section class="packages" id="packages">
+      <div class="section-head">
+        <h2 class="section-title">Our Packages</h2>
+        <p class="section-sub">3 quick picks • images auto-scroll • select &amp; book</p>
+      </div>
+
+      <div class="grid-3">
+        <!-- 1) CELEBRATION -->
+        <article class="pkg rgb-border" data-category="Celebration" data-price="1949">
+          <div class="pkg-top">
+            <h3>CELEBRATION</h3>
+            <span class="pill2">Slots Available</span>
+          </div>
+
+          <div class="pkg-media" data-images="assets/birthday.webp,assets/candlelight.webp,assets/cinema-room.webp"></div>
+
+          <div class="pkg-tags">
+            <span class="tag">Birthday</span>
+            <span class="tag ghost">Candlelight</span>
+            <span class="tag ghost">Cinema Room</span>
+          </div>
+
+          <div class="pkg-bottom">
+            <div class="p-price">₹1,949 <span>for up to 4 people</span></div>
+            <button class="btn primary open-booking">Select Time Slot</button>
+          </div>
+        </article>
+
+        <!-- 2) GAMING ZONE -->
+        <article class="pkg rgb-border" data-category="Gaming Zone" data-price="1949">
+          <div class="pkg-top">
+            <h3>GAMING ZONE</h3>
+            <span class="pill2">Slots Available</span>
+          </div>
+
+          <div class="pkg-media" data-images="assets/racing-sim.webp,assets/vr-room.webp,assets/gaming-character.webp"></div>
+
+          <div class="pkg-tags">
+            <span class="tag">Racing Sim</span>
+            <span class="tag ghost">VR</span>
+            <span class="tag ghost">Multiplayer</span>
+          </div>
+
+          <div class="pkg-bottom">
+            <div class="p-price">₹1,949 <span>for up to 4 people</span></div>
+            <button class="btn primary open-booking">Select Time Slot</button>
+          </div>
+        </article>
+
+        <!-- 3) ENTERTAINMENT -->
+        <article class="pkg rgb-border" data-category="Entertainment" data-price="1949">
+          <div class="pkg-top">
+            <h3>ENTERTAINMENT</h3>
+            <span class="pill2">Slots Available</span>
+          </div>
+
+          <div class="pkg-media" data-images="assets/standup.webp,assets/sports.webp,assets/concerts.webp"></div>
+
+          <div class="pkg-tags">
+            <span class="tag">Standup</span>
+            <span class="tag ghost">Sports</span>
+            <span class="tag ghost">Concerts</span>
+          </div>
+
+          <div class="pkg-bottom">
+            <div class="p-price">₹1,949 <span>for up to 4 people</span></div>
+            <button class="btn primary open-booking">Select Time Slot</button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact" id="contact">
+      <div class="contact-card rgb-border">
+        <h2>Contact</h2>
+        <p class="c-line"><strong>Address:</strong><br>
+          B-31, Basement, Lajpat Nagar - 1, Lajpat Nagar (South Delhi), South Delhi, New Delhi, Delhi, India, 110024
+        </p>
+        <p class="c-line"><strong>Email:</strong> <a href="mailto:playhauzentertainment@gmail.com">playhauzentertainment@gmail.com</a></p>
+        <div class="c-actions">
+          <a class="btn" href="mailto:playhauzentertainment@gmail.com">Email Us</a>
+          <a class="btn primary" href="#packages">Book Now</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Floating Buttons -->
+  <div class="float">
+    <a class="fab call" href="tel:+910000000000" title="Call">☎</a>
+    <a class="fab wa" href="https://wa.me/910000000000" target="_blank" rel="noreferrer" title="WhatsApp">🟢</a>
+  </div>
+
+  <!-- Booking Modal -->
+  <div class="modal" id="bookingModal" aria-hidden="true">
+    <div class="modal-card rgb-border">
+      <div class="modal-top">
+        <div>
+          <div class="modal-title" id="bmTitle">Booking</div>
+          <div class="modal-sub" id="bmPrice">₹0</div>
+        </div>
+        <button class="xbtn" id="closeModal">✕</button>
+      </div>
+
+      <div class="grid2">
+        <div class="field">
+          <label>CITY</label>
+          <select id="bmCity"><option>Delhi NCR</option></select>
+        </div>
+
+        <div class="field">
+          <label>LOCATION</label>
+          <select id="bmLocation">
+            <option value="">Choose a location</option>
+            <option>Lajpat Nagar - 1 (B-31 Basement)</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label>DATE</label>
+          <input id="bmDate" type="date" />
+        </div>
+
+        <div class="field">
+          <label>TIME SLOT</label>
+          <select id="bmSlot">
+            <option value="">Select a slot</option>
+            <option>30 Minutes</option>
+            <option>1 Hour</option>
+            <option>2 Hours</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label>NAME</label>
+          <input id="bmName" placeholder="Your name" />
+        </div>
+
+        <div class="field">
+          <label>PHONE</label>
+          <input id="bmPhone" placeholder="10-digit number" />
+        </div>
+      </div>
+
+      <button class="btn primary full" id="bmConfirm">Confirm on WhatsApp</button>
+      <div class="hint">*Price baad me change kar sakte ho. Abhi WhatsApp confirmation.</div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
